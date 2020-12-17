@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter as Router , Link} from 'react-router-dom';
 import {TimelineMax} from 'gsap';
 
-import './HomePageComponent.scss';
+import './homePageComponent.scss';
 import { ReactComponent as  Char} from '../../assets/svg/char.svg'
 class HomePage extends React.Component{
 
@@ -18,7 +18,7 @@ class HomePage extends React.Component{
             <React.Fragment>
             <header className='header-home'>
                 <div className='container'>
-                    <Router>
+                    
                     <nav id='main-nav'>
                         <ul>
                             <li><Link className='nav-item current' to='/'>Home</Link></li>
@@ -34,7 +34,7 @@ class HomePage extends React.Component{
                      {/* <Char></Char> */}
 
                     </div>
-                    </Router>
+                   
                 </div>
             </header>
             <section id='home-a' className='text-center py-2'>
