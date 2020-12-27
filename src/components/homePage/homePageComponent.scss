@@ -1,0 +1,51 @@
+@import "../../helperStyles/config";
+@import "../../helperStyles/utilities";
+@import "../../helperStyles/media";
+
+#home {
+  background: $bg-image no-repeat center right/cover;
+  height: 100vh;
+  color: #fff;
+}
+
+.main-content {
+  text-align: center;
+  padding-top: 20%;
+  h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+  }
+}
+
+.name-content {
+  color: $main-color;
+}
+// #main-nav {
+//   ul {
+//     display: flex;
+//     justify-content: flex-end;
+//   }
+//   li {
+//     padding: 1rem 1.5rem;
+//   }
+
+//   .nav-item {
+//     text-decoration: none;
+//     color: #fff;
+//     text-transform: uppercase;
+//     border-bottom: 3px transparent solid;
+//     padding-bottom: 0.5rem;
+//     transition: border-color 0.5s;
+//     &:hover {
+//       border-color: $medium-color;
+//     }
+
+//     &.current {
+//       border-color: $main-color;
+//     }
+//   }
+// }
+
+//section
+#home {
+}
