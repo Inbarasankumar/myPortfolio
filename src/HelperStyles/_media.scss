@@ -37,6 +37,8 @@
   #home-c .process,
   #about-d .recommendations,
   #contact-b .contact-info,
+  #about-b .skill-row,
+  #about-c .specials,
   .items {
     grid-template-columns: 1fr !important;
   }
@@ -103,6 +105,11 @@
         grid-template-areas:
           "bioimage"
           "bio";
+      }
+    }
+    &-b {
+      .skill-column {
+        max-width: 330px;
       }
     }
   }
