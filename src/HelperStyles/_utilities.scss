@@ -46,6 +46,10 @@ input[class^="btn-"]:hover {
   text-align: center;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 //padding
 .py {
   &-1 {

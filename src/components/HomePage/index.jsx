@@ -1,9 +1,8 @@
 import React from 'react';
-import {BrowserRouter as Router , Link} from 'react-router-dom';
-import {TimelineMax} from 'gsap';
+import {Link} from 'react-scroll';
 
 import './homePageComponent.scss';
-import { ReactComponent as  Char} from '../../assets/svg/char.svg'
+
 class HomePage extends React.Component{
 
     componentDidMount(){
@@ -16,28 +15,16 @@ class HomePage extends React.Component{
     render(){
         return(
             <React.Fragment>
-            <header className='header-home'>
-                <div className='container'>
-                    
-                    <nav id='main-nav'>
-                        <ul>
-                            <li><Link className='nav-item current' to='/'>Home</Link></li>
-                            <li><Link className='nav-item' to='/about'>About</Link></li>
-                            <li><Link className='nav-item' to='/work'>Work</Link></li>
-                            <li><Link className='nav-item' to='/Contact'>Contact</Link></li>
-                        </ul>
-                    </nav>
-                    <div className='header-content'>
+                
+            <div id='home' className='main-content'>
                         <h1>Hello, I'm Inbarasan.</h1>
                         <p className='lead'>I'm a full-stack web developer</p>
-                        <Link to='/work' className='btn-light'>View My Work</Link>
+                        <Link to='work-a' smooth duration={1000} className='btn-light'>View My Work</Link>
                      {/* <Char></Char> */}
 
-                    </div>
-                   
-                </div>
-            </header>
-            <section id='home-a' className='text-center py-2'>
+            </div>
+            
+            {/* <section id='home-a' className='text-center py-2'>
                 <div className='container'>
                         <h2 className="section-title">I Specialize in</h2>
                         <div className="bottom-line"></div>
@@ -71,19 +58,7 @@ class HomePage extends React.Component{
                         </div>
                 </div>
 
-            </section>
-            <footer id='main-footer'>
-                <div className='footer-content container'>
-                    <p>Copyright &copy; 2020. All Right Reserved.</p>
-                    <div className='social'>
-                            <i className='fab fa-twitter'></i>
-                            <i className='fab fa-linkedin'></i>
-                            <i className='fab fa-github'></i>
-                            <i className='fab fa-medium'></i>
-                    </div>
-                </div>
-            </footer>
-
+            </section> */}
             </React.Fragment>
         )
     }

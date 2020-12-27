@@ -1,0 +1,51 @@
+@import "../../helperStyles/config";
+@import "../../helperStyles/utilities";
+@import "../../helperStyles/media";
+
+// #header {
+//   &-home {
+//     background: $bg-image no-repeat center right/cover;
+//     height: 100vh;
+//     color: #fff;
+//   }
+//   &-inner {
+//     background: $bg-image no-repeat 20% 30% / cover;
+//     height: 5.5rem;
+//     border-bottom: 3px solid $main-color;
+//   }
+// }
+
+.nav-border {
+  border-bottom: 3px solid $main-color;
+}
+#main-nav {
+  height: 3.5rem;
+  position: sticky;
+  top: 0;
+  background: #330033;
+  z-index: 999;
+  ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  li {
+    padding: 1rem 1.5rem;
+  }
+
+  .nav-item {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s;
+    &:hover {
+      border-color: $medium-color;
+      cursor: pointer;
+    }
+
+    &.current {
+      border-color: $main-color;
+    }
+  }
+}

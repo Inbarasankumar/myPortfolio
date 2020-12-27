@@ -1,5 +1,6 @@
 @import "../../helperStyles/config";
 @import "../../helperStyles/utilities";
+@import "../../helperStyles/media";
 
 #about {
   &-a {
@@ -16,30 +17,46 @@
       grid-area: bio;
       border-left: 3px solid $main-color;
       padding: 0.8rem;
+      font-size: 1.2rem;
+    }
+    .about-content {
+      text-align: left;
     }
   }
 
   &-b {
-    .progress {
-      overflow: hidden;
-      height: 20px;
-      background: $medium-color;
-      border-radius: 5px;
-      margin-bottom: 0.6rem;
-
-      div {
-        height: 100%;
-        color: #fff;
-        text-align: center;
-        background: $main-color;
+    background: #faebd7;
+    .skill {
+      &-row {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
       }
+      // &-column {
+      //   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+      //   padding: 16px;
+      //   text-align: center;
+      // }
+      &-header {
+        display: inline-block;
+        padding: 10px;
+      }
+      &-content {
+        padding: 10px;
+        letter-spacing: 2px;
+      }
+    }
+    .fas {
+      padding: 10px;
     }
   }
 
   &-d {
+    background: #faebd7;
     .recommendations {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       grid-gap: 0.5rem;
 
       ul {
@@ -58,6 +75,20 @@
         height: 50px;
         border-radius: 50%;
         margin-right: 0.5rem;
+      }
+    }
+  }
+
+  &-c {
+    .specials {
+      margin-top: 3rem;
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-columns: repeat(4, 1fr);
+
+      .fas {
+        color: $main-color;
+        padding-bottom: 0.4rem;
       }
     }
   }
